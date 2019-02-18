@@ -1,0 +1,190 @@
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <meta name="viewport" content="width=device-width">
+  <title>Hellcatz&mdash;Bolt Racing Team</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+  <link href='/assets/css/fontawesome.min.css' rel='stylesheet'/>
+  <link href='/assets/css/solid.min.css' rel='stylesheet'/>
+  <style type='text/css'>
+    @font-face {
+      font-family: "Nimbus-Condensed";
+      src: url("/assets/fonts/NimbusSansDOT-LighCond.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Nimbus-Condensed";
+      src: url("/assets/fonts/NimbusSansDOT-BoldCond.woff") format("woff");
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Nimbus-Condensed";
+      src: url("/assets/fonts/NimbusSansDOT-LighCondItal.woff") format("woff");
+      font-weight: normal;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "Nimbus-Condensed";
+      src: url("/assets/fonts/NimbusSansDOT-BoldCondItal.woff") format("woff");
+      font-weight: bold;
+      font-style: italic;
+    }
+    * {
+      font-size: 16pt;
+    }
+    body {
+      background-color: rgb(63,50,47);
+      color: white;
+      font-family: Nimbus-Condensed, sans-serif;
+      width: 900px;
+      margin: auto;
+    }
+    
+    #content {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border: 2px solid rgba(242, 120, 12, 1);
+      background-color: rgba(204, 204, 204, 1);
+      border-radius: 10px;
+      color: black;
+      padding: 2em;
+      padding-top: 0;
+    }
+    table {
+      width: 100%;
+    }
+    
+    @media only screen and (max-width: 900px) {
+      table {
+        width: 100%;
+      }
+      * {
+        font-size: 10vw;
+      }
+      body {
+        width: calc(device-width);
+      }
+      #content {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        border:none;
+        padding: 1em;
+      }
+    }
+    #team-name {
+      height: 76px;
+      padding-bottom: 38px;
+    }
+    #logo-separator {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+    #team-logo {
+      height: 153px;
+    }
+    #primal-logo {
+      height: 3em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    #word-mark {
+      display: none;
+      height: 1.5em;
+      padding-bottom: 1em;
+      padding-left: 0.5em;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+    #nav, #nav2 {
+      padding: 0;
+      margin: 0;
+      display: inline;
+    }
+    ul.nav-menu li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+    ul.nav-menu > li > a {
+      padding-left: 8px;
+      padding-right: 8px;
+      color: #d76127;
+      text-decoration: none;
+    }
+    ul.nav-menu > li > a:hover {
+      color: #ff5500;
+      text-decoration: underline;
+    }
+    a {
+      color: #d76127;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff5500;
+      text-decoration: underline;
+    }
+    input, button {
+      font-family: "Nimbus-Condensed";
+    }
+    i.fas {
+      font-size: 14px;
+      text-stroke: 1px black;
+      -webkit-text-stroke: 1px black;
+      float: right;
+      line-height: 18pt;
+      margin-left: 4px;
+    }
+    i.gold {
+      color: gold;
+    }
+    i.silver {
+      color: silver;
+    }
+    i.bronze {
+      color: #cd7f32;
+    }
+  </style>
+</head>
+<body>
+  <div id='content'>
+    <h1 style='text-align: center'><a href='/'><span style='display:none'>Bolt Race Team Hellcatz</span><img id='team-logo' src='logo.svg'/><span id='logo-separator'></span><img id='team-name' src='brt.svg'/><img id='word-mark' src='team-name.svg'/></a></h1>
+<hr/>
+<div style='text-align: center'>
+<span style='font-size: 100%'>Racing Leagues:</span>
+<ul id='nav' class='nav-menu'>
+  <li><a href='/ages-league'>Ages</a></li>
+  <li><a href='/criterium-league'>Criterium</a></li>
+  <li><a href='/iron-goat-league'>Iron Goat</a></li>
+  <li><a href='/tt-league'>Time Trial</a></li>
+  <li><a href='/wild-women-league'>Wild Women</a></li>
+  <li><a href='/fuzion-league'>Fuzion</a></li>
+</ul>
+</div>
+<hr/>
+<ul id='nav2' class='nav-menu' style='text-align: center; display: block'>
+  <li><a href='/join-brt' style='padding-left: 0'>Join BRT</a></li>
+  <li><a href='/zwift-power-guide'>ZwiftPower Guide</a></li>
+  <li><a href='/zwift-racing-guide'>Zwift Racing Guide</a></li>
+  <li><span style='padding-left: 1em; font-size: 100%'>Sponsored by</span> <a href='https://www.primaleurope.com/' style='padding-left: 0'>Primal Europe</a></li>
+</ul>
+<hr/>
+{{content}}
+<p style='text-align: center'>
+<a href='https://www.primaleurope.com/'><img src='primal-reverse.svg' style='height: 4em; max-width: 800px' /></a>
+</p>
+</div>
+</body>
+</html>
+
